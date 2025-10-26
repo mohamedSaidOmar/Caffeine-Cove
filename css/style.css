@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f1f1f1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald", sans-serif;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    /* background-color: #eae8e8; */
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 100;
+        .img {
+            width: fit-content;
+            img {
+                width: 250px;
+            }
+        }
+        ul li {
+            padding: 17px;
+            font-size: 20px;
+            a {
+                color: #000;
+                font-weight: 500;
+            }
+            a:hover {
+                color: #c8a88c;
+                transition: 0.3s ease-in-out;
+            }
+        }
+        .toggle-menu {
+    display: none;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 200;
+    color: #000;
+    }
+    }
+    .container {
+        background-image: url('../img/home-bg.png');
+        background-position: center;
+        background-size: cover;
+        height: 630px;
+        .content {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            margin-top: 180px;
+            p {
+                font-size: 20px;
+                font-weight: 400;
+                margin-bottom: 25px;
+            }
+            h1 {
+                font-size: 50px;
+                margin-bottom: 20px;
+            }
+            .img img {
+                width: 450px;
+            }
+            button {
+                padding: 10px 22px;
+                background-color: #af8d6f;
+                border-radius: 23px;
+                border: none;
+                cursor: pointer;
+                color: #fff;
+            }
+            button:hover {
+                background-color: #200a07   ;
+                transition: 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+.about {
+    background-color: #fff;
+    height: 550px;
+    .content {
+        display: flex;
+        justify-content: space-evenly;
+        .img, .text {
+            margin-top: 70px;
+        }
+        .img img {
+            width: 400px;
+        }
+        h3 {
+            font-size: 30px;
+            margin-bottom: 12px;
+            span {
+                color: #af8d6f;
+            }
+        }
+        p {
+            margin-bottom: 25px;
+        }
+        h4 {
+            font-size: 22px;
+        }
+    }
+}
+
+.menu {
+    background-color: #fff;
+    /* margin-bottom: 150px; */
+    height: 700px;
+    .cards {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    max-width: 1200px;
+    margin: 70px auto 0 auto; 
+}
+
+.cards .card {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+    border: 1px solid #e0d6d6;
+    margin-bottom: 25px; 
+    width: 49%; 
+}
+
+.cards .card .img img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.cards .card .text h5 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.cards .card .text p {
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+}
+
+.cards .card .price {
+    margin-left: auto; 
+    padding-left: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #af8d6f;
+}
+}
+
+.testimonial {
+    background-color: #fff;
+    height: 450px;
+    h2 {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .cards {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        .card {
+            margin: 22px;
+            border-radius: 10px;
+            padding: 60px 20px 25px;
+            background-color: #f1f1f1;
+            color: #000;
+            position: relative;
+            img{
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: -25%;
+                left: 50%;
+                transform: translateX(-50%);
+                border: 5px solid #fff;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            }
+            h5 {
+                margin-bottom: 15px;
+                font-size: 20px;
+                line-height: 1.4;
+            }
+        }
+    }
+}
+
+.contact {
+    height: 550px;
+    p {
+        color: #c8a88c;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        max-width: 1200px;
+        margin: auto;
+        .form {
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            h3 {
+                margin-bottom: 8px;
+            }
+            form {
+                input, textarea {
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 8px;
+                }
+                button {
+                    width: 100%;
+                    padding: 10px;
+                    border: 2px solid transparent;
+                    background-color: #000;
+                    color: #fff;
+                    cursor: pointer;
+                }
+                button:hover {
+                    background-color: #fff;
+                    border: 2px solid #000;
+                    color: #000;
+                    transition: 0.3s ease-in-out;
+                }
+            }
+        }       
+    }
+}
+
+@media (max-width: 992px) {
+
+    header .nav .links {
+    /* display: none; */
+    flex-direction: column;
+    /* gap: 200px; */
+    position: absolute;
+    width: 100%;
+    top: 060px;
+    right: 0;
+    background: #a09e9e;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+header .nav .img {
+    margin-right: auto;
+}
+
+header .nav .toggle-menu {
+    display: block;
+}
+
+header .nav .links .active {
+    display: flex;
+}
+
+
+header .container .content {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 120px;
+    .img img {
+    width: 250px;
+    margin-top: 30px;
+    }
+}
+
+.about {
+    height: auto;
+    padding: 40px 20px;
+    .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .img img {
+        width: 250px;
+        margin-bottom: 30px;
+    }
+    }
+}
+
+.menu {
+    height: auto;
+    padding: 40px 20;
+    .cards {
+    justify-content: center;
+    }
+    .cards .card {
+    width: 100%;
+    max-width: 600px;
+    }
+}
+
+.testimonial {
+    height: auto;
+    padding: 50px 20px;
+    .cards {
+    flex-direction: column;
+    align-items: center;
+    .card {
+        width: 90%;
+        margin-bottom: 60px;
+    }
+    }
+}
+
+.contact {
+    height: auto;
+    padding: 50px 20px;
+    .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .map iframe {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .form {
+        width: 100%;
+        max-width: 400px;
+    }
+    }
+}
+}
+
+@media (max-width: 600px) {
+
+header .nav .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #222;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+header .nav .img {
+    margin-right: auto;
+}
+
+header .nav .toggle-menu {
+    display: block;
+}
+
+header .nav .links .active {
+    display: flex;
+}
+
+header .container .content {
+    margin-top: 150px;
+    h1 {
+    font-size: 32px;
+    line-height: 1.3;
+    }
+    p {
+    font-size: 16px;
+    }
+    button {
+    padding: 8px 18px;
+    font-size: 15px;
+    }
+}
+
+.menu .cards .card {
+    flex-direction: column;
+    text-align: center;
+    .img img {
+    margin: 0 auto 10px;
+    }
+    .price {
+    margin: 10px 0 0 0;
+    }
+}
+
+.testimonial .cards .card img {
+    top: -18%;
+    width: 80px;
+    height: 80px;
+}
+
+.contact .content .form {
+    padding: 20px;
+}
+}
+
