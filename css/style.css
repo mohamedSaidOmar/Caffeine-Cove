@@ -294,7 +294,7 @@ header .nav .toggle-menu {
     display: block;
 }
 
-header .nav .links .active {
+header .nav .links.active {
     display: flex;
 }
 
@@ -429,4 +429,5 @@ header .container .content {
     padding: 20px;
 }
 }
+
 
